@@ -12,12 +12,12 @@ public:
                     s.insert(nums[i]);
                     uniqueRow.push_back(nums[i]);
                     nums.erase(nums.begin() + i);
-                    i--;  // Adjust the index after erasing an element
+                    i--;
                 }
             }
             
             ans.push_back(uniqueRow);
-            s.clear();  // Clear the set for the next row
+            s.clear();
         }
         
         return ans;
